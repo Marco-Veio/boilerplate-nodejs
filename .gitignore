@@ -1,0 +1,15 @@
+# Saves
+.history/
+# Modules
+node_modules/
+# Build
+bin/
+# Configurations
+.vscode/
+.env*
+# Database
+**/*.sqlite
+# Tests
+thunder-tests/thunderActivity.json
+tests/coverage/
+

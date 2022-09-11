@@ -1,0 +1,35 @@
+# Saves
+.history/
+# Modules
+node_modules/
+# Build
+bin/
+# Configurations
+package.json
+package-lock.json
+yarn.lock
+.gitignore
+.env*
+.editorconfig
+.eslintrc.*
+.prettier*
+tsconfig*
+.sequelizerc
+jest.config*
+[Dd]ocker*
+# Database
+**/migrations*
+**/seeders*
+**/*.sqlite
+# Tests
+thunder-tests/
+tests/coverage/
+**/[Tt]est*
+!tests/
+# Images
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.svg
+**/*.ico

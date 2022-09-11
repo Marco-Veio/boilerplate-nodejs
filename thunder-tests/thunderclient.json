@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "0787bbb4-db5e-4ca8-8f0e-c2a82574d9fe",
+    "colId": "1675ea3e-19a3-4af4-9924-939e84e45778",
+    "containerId": "",
+    "name": "Create User",
+    "url": "{{BASE_URL}}users",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-09-08T07:58:37.709Z",
+    "modified": "2022-09-11T00:11:00.603Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"{{REQUEST_USERNAME}}\",\n  \"email\": \"{{REQUEST_EMAIL}}\",\n  \"password\": \"{{REQUEST_PASSWORD}}\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

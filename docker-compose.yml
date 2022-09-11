@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  database:
+    image: postgres:12
+    container_name: database
+    hostname: postgres
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - 5432:5432
+  backend:
+    container_name: backend
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/app/backend
+    environment:
+      WAIT_HOSTS: database:5432
+    depends_on:
+      - database
+    build: .
+    command: sh -c "/wait && yarn migrate && yarn ${AMBIENT}"
