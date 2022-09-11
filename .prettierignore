@@ -26,3 +26,10 @@ thunder-tests/
 tests/coverage/
 **/[Tt]est*
 !tests/
+# Images
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.svg
+**/*.ico
